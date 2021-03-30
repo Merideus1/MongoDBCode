@@ -23,3 +23,17 @@
 # Graph databases store data in nodes and edges. Nodes typically store information about people, places, and things while edges store information about the 
 # relationships between the nodes. Graph databases excel in use cases where you need to traverse relationships to look for patterns such as social networks, 
 # fraud detection, and recommendation engines. Neo4j and JanusGraph are examples of graph databases.
+
+# For MongoDB deployments running on Windows, database names cannot contain any of the following characters:
+# /\. "$*<>:|?
+
+# For MongoDB deployments running on Unix and Linux systems, database names cannot contain any of the following characters:
+# /\. "$
+
+# Database names cannot be empty and must have fewer than 64 characters.
+
+# Collection names should begin with an underscore or a letter character, and cannot:
+# contain the $.
+# be an empty string (e.g. "").
+# contain the null character.
+# begin with the system. prefix. (Reserved for internal use.)
