@@ -1,0 +1,8 @@
+# Scenario	MongoDB Solution to HA
+# Server Failure	Lesson: Server Maintenance
+# OS/Security upgrade	Lesson: Server Maintenance
+# Scaling Vertically	Lesson: Server Maintenance
+# Migrating database schema	Lesson: Schema Migration
+# Adding/Replacing Server	Adding a Server: https://docs.mongodb.com/manual/tutorial/expand-replica-set/
+# Changing hostname or IP	SRV record/DNS Seedlist: https://docs.mongodb.com/manual/reference/connection-string/#dns-seedlist-connection-format
+# Scaling Horizontally	Sharding: https://docs.mongodb.com/manual/sharding/
