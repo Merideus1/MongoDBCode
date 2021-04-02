@@ -1,0 +1,22 @@
+// Requires the MongoDB Java Driver - https://mongodb.github.io/mongo-java-driver
+Bson filter = lt("age", 30L);
+MongoClient mongoClient = new MongoClient(
+    new MongoClientURI(
+       "mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&ssl=false"
+    )
+);
+MongoDatabase database = mongoClient.getDatabase("test");
+MongoCollection<Document> collection = database.getCollection("people");
+FindIterable<Document> result = collection.find(filter);
+
+Bson filter = lt("age", 30L);
+
+MongoClient mongoClient = new MongoClient(
+    new MongoClientURI(
+       "mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&ssl=false"
+    )
+);
+
+MongoDatabase database = mongoClient.getDatabase("test");
+MongoCollection<Document> collection = database.getCollection("people");
+FindIterable<Document> result = collection.find(filter);
