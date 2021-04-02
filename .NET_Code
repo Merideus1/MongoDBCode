@@ -1,0 +1,14 @@
+// Requires the MongoDB .NET Driver - https://mongodb.github.io/mongo-csharp-driver/2.10/getting_started/installation/
+var client = new MongoClient("mongodb://localhost:27017");
+var database = client.GetDatabase("test");
+var collection = database.GetCollection<BsonDocument>("people");
+var filter = Builders<BsonDocument>.Filter.Lt("age", 30);
+var document = collection.Find(filter).First();
+
+var client = new MongoClient("mongodb://localhost:27017");
+
+var filter = Builders<BsonDocument>.Filter.Lt("age", 30);
+
+MongoDatabase database = mongoClient.getDatabase("test");
+MongoCollection<Document> collection = database.getCollection("people");
+FindIterable<Document> result = collection.find(filter);
