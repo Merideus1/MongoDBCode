@@ -110,5 +110,3 @@ db.grades.updateOne({ "student_id": 250, "class_id": 339 },
                                 }
                      })
                      
-
-
