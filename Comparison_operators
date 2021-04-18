@@ -1,2 +1,15 @@
 $inc, $set, $unset
 
+mongo "mongodb+srv://<username>:<password>@<cluster>.mongodb.net/admin"
+
+use sample_training
+
+db.trips.find({ "tripduration": { "$lte" : 70 },
+                "usertype": { "$ne": "Subscriber" } }).pretty()
+                
+db.trips.find({ "tripduration": { "$lte" : 70 },
+                "usertype": { "$eq": "Customer" }}).pretty()
+                
+db.trips.find({ "tripduration": { "$lte" : 70 },
+                "usertype": "Customer" }).pretty()
+                
