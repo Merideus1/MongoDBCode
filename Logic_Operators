@@ -16,3 +16,7 @@ is same as
 {"student_id": {"$gt": 25}, "student_id": {"$lt": 100}}
 better
 {"student_id": {"$gt": 25, "$lt": 100}}
+
+{"$or" :[{dst_airport : "KZN"},{src_airport : "KZN"}]}
+and
+{"$or" :[{airplane : "CR2"},{airplane : "A81"}]}
