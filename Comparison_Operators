@@ -1,4 +1,4 @@
-$inc, $set, $unset
+$inc, $set, $unset, $eq, $gt, $gte, $ne, $lt, $lte
 
 mongo "mongodb+srv://<username>:<password>@<cluster>.mongodb.net/admin"
 
