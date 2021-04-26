@@ -14,4 +14,5 @@ db.routes.find({ "$and": [ { "$or" :[ { "dst_airport": "KZN" },
 {"$and": [{"student_id": {"$t": 25}}, {"student_id": {"$lt": 100}}]}
 is same as
 {"student_id": {"$gt": 25}, "student_id": {"$lt": 100}}
-
+better
+{"student_id": {"$gt": 25, "$lt": 100}}
