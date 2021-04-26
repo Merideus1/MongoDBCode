@@ -1,0 +1,10 @@
+$and, $or, $nor, $not
+
+use sample_training
+
+db.routes.find({ "$and": [ { "$or" :[ { "dst_airport": "KZN" },
+                                    { "src_airport": "KZN" }
+                                  ] },
+                          { "$or" :[ { "airplane": "CR2" },
+                                     { "airplane": "A81" } ] }
+                         ]}).pretty()
