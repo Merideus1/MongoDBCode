@@ -9,7 +9,7 @@ db.routes.find({ "$and": [ { "$or" :[ { "dst_airport": "KZN" },
                                      { "airplane": "A81" } ] }
                          ]}).pretty()
 
-{"$and": [{sctor : "Mobile Food Vendor - 881"}, {result:"Warning"}]}
+{"$and": [{sector : "Mobile Food Vendor - 881"}, {result:"Warning"}]}
 
 {"$and": [{"student_id": {"$t": 25}}, {"student_id": {"$lt": 100}}]}
 is same as
