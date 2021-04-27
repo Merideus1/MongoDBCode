@@ -1,4 +1,4 @@
-$exper
+$expr
 
 use sample_training
 
@@ -9,3 +9,4 @@ db.trips.find({ "$expr": { "$and": [ { "$gt": [ "$tripduration", 1200 ]},
                          { "$eq": [ "$end station id", "$start station id" ]}
                        ]}}).count()
                        
+{"$expr": {"$eq": ["$start station id","$end station id"]}}
