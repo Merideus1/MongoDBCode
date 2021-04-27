@@ -10,3 +10,11 @@ db.trips.find({ "$expr": { "$and": [ { "$gt": [ "$tripduration", 1200 ]},
                        ]}}).count()
                        
 {"$expr": {"$eq": ["$start station id","$end station id"]}}
+
+{"$expr": {
+         $"and": [
+                  {"$gt": ["$tripduration", 1200]},
+                  {"$eq": ["$end station id", "$start station id" ]}
+                 ]
+          }
+}
