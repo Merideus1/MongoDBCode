@@ -18,3 +18,5 @@ db.trips.find({ "$expr": { "$and": [ { "$gt": [ "$tripduration", 1200 ]},
                  ]
           }
 }
+
+db.companies.find({"$expr": {"$eq": ["$permalink","$twitter_username"]}}).count()
