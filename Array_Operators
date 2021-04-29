@@ -1,0 +1,13 @@
+use sample_airbnb
+
+db.listingsAndReviews.find({ "amenities": {
+                                  "$size": 20,
+                                  "$all": [ "Internet", "Wifi",  "Kitchen",
+                                           "Heating", "Family/kid friendly",
+                                           "Washer", "Dryer", "Essentials",
+                                           "Shampoo", "Hangers",
+                                           "Hair dryer", "Iron",
+                                           "Laptop friendly workspace" ]
+                                         }
+                            }).pretty()
+                            
