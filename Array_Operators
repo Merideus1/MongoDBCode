@@ -12,3 +12,5 @@ db.listingsAndReviews.find({ "amenities": {
                             }).pretty()
                             
 db.listingsAndReviews.find({ "accommodates": {"$gt": 6}, "reviews": {"$size": 50}}).count()
+
+db.listingsAndReviews.find({"property_type": {"$eq": "House"}, "amenities": {"$all": ["Changing table"]}}).count()
