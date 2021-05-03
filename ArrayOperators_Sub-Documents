@@ -24,3 +24,4 @@ db.companies.find({ "relationships":
                                         "person.first_name": "Mark" } } },
                   { "name": 1 }).count()
                   
+db.trips.find({ "start station location.coordinates.0": {"$lt": -74 }}).count()
