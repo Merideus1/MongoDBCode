@@ -26,3 +26,4 @@ db.grades.find({ "class_id": 431 },
 db.grades.find({ "scores": { "$elemMatch": { "type": "extra credit" } }
                }).pretty()
                
+{ "offices": { "$elemMatch": { "city": { "$eq": "Seattle" }}}}
