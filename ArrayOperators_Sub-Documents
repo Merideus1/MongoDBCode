@@ -25,3 +25,5 @@ db.companies.find({ "relationships":
                   { "name": 1 }).count()
                   
 db.trips.find({ "start station location.coordinates.0": {"$lt": -74 }}).count()
+
+db.inspections.find({ "address.city": {"$eq": "NEW YORK" }}).count()
