@@ -8,3 +8,4 @@ db.trips.createIndex({ "birth year": 1 })
 
 db.trips.createIndex({ "start station id": 1, "birth year": 1 })
 
+db.routes.find({ "src_airport": "MUC" }).pretty()
